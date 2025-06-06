@@ -1,0 +1,57 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Julio 2023 - Presente",
+    title: "Analista de Tecnología",
+    company: "GRUPO DAO SAS",
+    description:
+      "Brindo soporte técnico de primer nivel, presencial y remoto, en entornos Windows y Linux.\n" +
+      "Gestiono el inventario de activos tecnológicos, copias de seguridad y monitoreo de infraestructura TI.\n" +
+      "Automatizo procesos internos mediante Google Apps Script, Windows scripts y aplicaciones ligeras.\n" +
+      "Administración de Active Directory, políticas de grupo (GPO) y usuarios en Windows Server.\n" +
+      "Soporte y administración de Google Workspace, incluyendo configuración de correo, usuarios y seguridad.\n" +
+      "Documentación técnica y atención directa a usuarios finales."
+  },
+  {
+    date: "Enero 2023 - Julio 2023",
+    title: "Desarrollador Web",
+    company: "Coderlyst (Freelance)",
+    description:
+      "Desarrollé sitios web institucionales y de comercio electrónico utilizando HTML, CSS, JavaScript y CMS como WordPress.\n" +
+      "Participé en proyectos freelance enfocados en funcionalidad, diseño responsivo y experiencia de usuario.\n" +
+      "Conecté bases de datos y estructuré interfaces web adaptativas orientadas a rendimiento y escalabilidad.\n" +
+      "Colaboré estrechamente con otros desarrolladores para entregar soluciones web efectivas."
+  },
+  {
+    date: "Enero 2021 - Enero 2023",
+    title: "Analista de Tecnología",
+    company: "GRUPO DAO SAS",
+    description:
+      "Brindé soporte técnico a usuarios y asistí en el mantenimiento y alistamiento de equipos de cómputo.\n" +
+      "Participé en la documentación de procesos técnicos y en la gestión básica del inventario de equipos.\n" +
+      "Colaboré en tareas de red local, instalación de software y configuración de equipos."
+  },
+  {
+    date: "Julio 2020 - Enero 2021",
+    title: "Soporte Técnico (Prácticas SENA)",
+    company: "GRUPO DAO SAS",
+    description:
+      "Realicé mantenimiento preventivo y correctivo de equipos de cómputo.\n" +
+      "Diagnostiqué y solucioné problemas de conectividad, impresión y hardware.\n" +
+      "Brindé soporte en la red local y asistencia con herramientas ofimáticas.\n" +
+      "Apoyé en la documentación técnica e inventario del área de tecnología."
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

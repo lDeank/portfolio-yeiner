@@ -1,0 +1,73 @@
+---
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import MailIcon from "../icons/Mail.astro";
+---
+
+<div class="">
+  <!-- class="max-w-2xl"-->
+  <div class="sm:flex items-center mb-8">
+    <img
+      class="mb-8 sm:mb-0 rounded-full size-24 sm:size-36 mr-8 shadow-lg"
+      src="https://i.pinimg.com/originals/b6/99/ea/b699ea44cbe4c1c9af918016259703aa.jpg"
+      alt="Tunnler's"
+    />
+    <div class="flex flex-col gap-5">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-bold text-pretty">
+          Hola, <span class="text-purple-800 opacity-80 dark:text-purple-300"
+            >soy Yeiner</span
+          > 👋
+        </h1>
+        <span
+          class="font-semibold inline-flex animate-background-shine bg-[linear-gradient(110deg,#c084fc,45%,#e0c3ff,55%,#c084fc)] dark:bg-[linear-gradient(110deg,#f3e8ff,45%,#c084fc,55%,#f3e8ff)] bg-[length:250%_100%] bg-clip-text text-lg sm:text-xl text-transparent"
+          >Analista De Tecnología y Desarrollador Web
+        </span>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <Badge>Disponible para Trabajo</Badge>
+
+      </div>
+    </div>
+  </div>
+  <p class="text-base sm:text-xl mt-6 md:mt-10 text-pretty">
+    🔧+4 años de experiencia en 
+    <span class="text-purple-600 dark:text-purple-400">soporte técnico</span> e
+    <span class="text-purple-600 dark:text-purple-400">infraestructura TI</span>, incluyendo gestión de 
+    <span class="text-purple-600 dark:text-purple-400">Active Directory</span>, administración de 
+    <span class="text-purple-600 dark:text-purple-400">Windows Server</span>, 
+    <span class="text-purple-600 dark:text-purple-400">copias de seguridad</span>, soporte en entornos
+    <span class="text-purple-600 dark:text-purple-400">Linux</span> y
+    <span class="text-purple-600 dark:text-purple-400">Google Workspace</span>.
+  </p>
+  <p class="text-base sm:text-xl mt-6 md:mt-10 text-pretty">
+    💻+2 años de experiencia desarrollando soluciones 
+    <span class="text-purple-600 dark:text-purple-400">web</span> con
+    <span class="text-purple-600 dark:text-purple-400">HTML</span>,
+    <span class="text-purple-600 dark:text-purple-400">CSS</span>, 
+    <span class="text-purple-600 dark:text-purple-400">JavaScript</span>,
+    <span class="text-purple-600 dark:text-purple-400">React</span>,  
+    <span class="text-purple-600 dark:text-purple-400">Angular</span> y 
+    <span class="text-purple-600 dark:text-purple-400">CMS</span>. Apasionado por el diseño 
+    <span class="text-purple-600 dark:text-purple-400">UI/UX</span>, la automatización con 
+    <span class="text-purple-600 dark:text-purple-400">Python</span> y el desarrollo de aplicaciones modernas basadas en frameworks
+    <span class="text-purple-600 dark:text-purple-400">JavaScript</span> y
+    <span class="text-purple-600 dark:text-purple-400">bases de datos relacionales</span>.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="https://www.linkedin.com/in/ydlopez11/" target="_blank">
+      <LinkedInIcon class="size-6" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/Tunnler" target="_blank">
+      <GitHubIcon class="size-6" />
+      GitHub
+    </SocialPill>
+    <SocialPill href="mailto:ydlopez11@gmail.com" target="_blank">
+      <MailIcon class="size-6" />
+      ydlopez11@gmail.com
+    </SocialPill>
+  </nav>
+</div>

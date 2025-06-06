@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Hero from "../components/Hero.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+import TitleSection from "../components/TitleSection.astro";
+import CodeIcon from "../icons/Code.astro";
+import Briefcase from "../icons/Briefcase.astro";
+import AboutMe from "../components/AboutMe.astro";
+import ProfileCheck from "../icons/ProfileCheck.astro";
+import Technologies from "../components/Technologies.astro";
+import Devices from "../icons/Devices.astro";
+---
+
+<Layout title="Portafolio de Yeiner - Desarrollador Fullstack" description="Portafolio de Yeiner - Analista De Tecnología y Desarrollador">
+  <main class="px-4">
+
+    <SectionContainer id="inicio" class="py-16 md:py-36">
+      <Hero>
+        <slot />
+      </Hero>
+    </SectionContainer>
+
+    <div class="space-y-24">
+      <SectionContainer id="experiencia">
+        <TitleSection>
+          <Briefcase class="size-8" />
+          Experiencia laboral
+        </TitleSection>
+        <Experience />
+      </SectionContainer>
+
+      <SectionContainer id="proyectos">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          Proyectos
+        </TitleSection>
+        <Projects />
+      </SectionContainer>
+
+      <SectionContainer id="sobre-mi">
+        <TitleSection>
+          <ProfileCheck class="size-8" />
+          Sobre mí
+        </TitleSection>
+        <AboutMe />
+      </SectionContainer>
+
+      <SectionContainer id="tecnologias">
+        <TitleSection>
+          <Devices class="size-8" />
+          Tecnologías
+        </TitleSection>
+        <Technologies />
+      </SectionContainer>
+    </div>
+    
+  </main>
+</Layout>
